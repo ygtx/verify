@@ -1,0 +1,45 @@
+header.mobile {
+  float: left;
+  width: 30%;
+  height: 100%;
+}
+
+div#main {
+  float:right;
+  width: 70%;
+  height: 100%
+}
+
+/* section#intro {
+
+} */
+
+
+/* .flexslider.* {
+    position:absolute;
+    left: 0;
+    right: 0;
+    border: 0;
+    width: 100%;
+    height: 100%;
+}
+* {
+  width: 100%;
+  height: 100%;
+
+} */
+
+
+section#intro {
+  width: 100%;
+  height: 100%;
+  }
+div#intro-slider {
+  width: 100%;
+  height: 100%;
+}
+
+
+section {
+  background:linear-gradient(90deg,rgba(230, 155, 55, 1) 0%,rgba(230, 155, 55, 1) 30%,white 30%,white 100%);
+}

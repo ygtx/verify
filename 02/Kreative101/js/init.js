@@ -11,7 +11,7 @@
 /*	Flexslider
 /*----------------------------------------------------*/
    $('#intro-slider').flexslider({
-      animation: 'fade',
+      animation: 'slide',
       controlNav: false,
    });
 
@@ -59,7 +59,7 @@
                $('#image-loader').fadeOut();
                $('#message-warning').hide();
                $('#contactForm').fadeOut();
-               $('#message-success').fadeIn();   
+               $('#message-success').fadeIn();
             }
             // There was an error
             else {
@@ -77,12 +77,20 @@
    });
 
 
+// MY THING ----------------------------------------------- ↓
+
+
+   $('.smoothscroll').on('click',function (e) {
+	    e.preventDefault();
+
+	    var target = this.hash,
+	    $target = $(target);
+
+	    $('html, body').stop().animate({
+	        'scrollTop': $target.offset().top
+	    }, 800, 'swing', function () {
+	        window.location.hash = target;
+	    });
+	});
+
 });
-
-
-
-
-
-
-
-
